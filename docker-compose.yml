@@ -3,13 +3,13 @@ version: '3'
 services:
 
     frontend:
-        container_name: frontendapp
-        build: ./frontend
+        container_name: front
+        image: bryaalbani/app_backend:latest
         ports:
             - "3000:3000"
     backend:
-        container_name: backendapp
-        build: ./backend
+        container_name: back
+        image: bryaalbani/app_frontend:latest
         ports:
             - "8080:8080"
         environment:
